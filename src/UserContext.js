@@ -76,7 +76,6 @@ export const UserStorage = ({ children }) => {
       await getUser(token);
       navigate('/conta');
     } catch (err) {
-      setError(err.message);
       setLogin(false);
     } finally {
       setLoading(false);
